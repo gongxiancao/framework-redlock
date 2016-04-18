@@ -1,0 +1,23 @@
+{
+  "name": "framework-redlock",
+  "version": "1.0.0",
+  "description": "framework redlock plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gongxiancao/framework-redlock.git"
+  },
+  "author": "GongXian Cao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gongxiancao/framework-redlock/issues"
+  },
+  "homepage": "https://github.com/gongxiancao/framework-redlock#readme",
+  "dependencies": {
+    "redis": "2.5.3",
+    "redlock": "2.0.0"
+  }
+}
