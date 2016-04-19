@@ -40,7 +40,7 @@ module.exports = function (done) {
   var clients = _.map(connectionConfig.hosts, function (host) {
     var options = _.extend({}, connectionConfig);
     delete options.hosts;
-    _.extend({port: 6379}, options, host);
+    options = _.extend({port: 6379}, options, host);
     return redis.createClient(options);
   });
 
