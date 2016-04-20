@@ -17,7 +17,7 @@ module.exports.connections = {
   }
 }
 **/
-
+var Promise = require('bluebird');
 var Redlock = require('redlock');
 var redis = require('redis');
 var _redlock;
@@ -29,7 +29,7 @@ var redlock = {
   }
 };
 
-module.exports = function (done) {
+function lift (done) {
   var connectionName = framework.config.redlock.connection;
   var connectionConfig = framework.config.connections[connectionName];
   if(!connectionConfig) {
@@ -66,3 +66,5 @@ module.exports = function (done) {
 
   done();
 };
+
+module.exports = Promise.promisify(lift);

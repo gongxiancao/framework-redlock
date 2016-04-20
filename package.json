@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gongxiancao/framework-redlock#readme",
   "dependencies": {
+    "bluebird": "3.3.5",
     "redis": "2.5.3",
     "redlock": "2.0.0"
   }
