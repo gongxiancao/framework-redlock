@@ -59,7 +59,7 @@ function lift (done) {
 
         // the time in ms between attempts
         retryDelay:  200
-      }, framework.config.redlock.lockOptions)
+      }, framework.config.redlock.options)
     );
 
   framework.redlock = redlock;
