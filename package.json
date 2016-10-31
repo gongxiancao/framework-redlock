@@ -1,21 +1,21 @@
 {
-  "name": "framework-redlock",
+  "name": "ofa-redlock",
   "version": "1.0.0",
-  "description": "framework redlock plugin",
+  "description": "ofa redlock plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gongxiancao/framework-redlock.git"
+    "url": "git+https://github.com/gongxiancao/ofa-redlock.git"
   },
   "author": "GongXian Cao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gongxiancao/framework-redlock/issues"
+    "url": "https://github.com/gongxiancao/ofa-redlock/issues"
   },
-  "homepage": "https://github.com/gongxiancao/framework-redlock#readme",
+  "homepage": "https://github.com/gongxiancao/ofa-redlock#readme",
   "dependencies": {
     "bluebird": "3.3.5",
     "redis": "2.5.3",

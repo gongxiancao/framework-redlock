@@ -1,2 +1,2 @@
-# framework-redlock
-framework redlock plugin
+# ofa-redlock
+ofa redlock plugin

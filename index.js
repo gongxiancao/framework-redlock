@@ -30,12 +30,12 @@ var redlock = {
 };
 
 function lift (done) {
-  var connectionName = framework.config.redlock.connection;
-  var connectionConfig = framework.config.connections[connectionName];
+  var connectionName = ofa.config.redlock.connection;
+  var connectionConfig = ofa.config.connections[connectionName];
   if(!connectionConfig) {
     throw new Error('Undefined connection ' + connectionName);
   }
-  redlock.options = {prefix: framework.config.redlock.prefix};
+  redlock.options = {prefix: ofa.config.redlock.prefix};
 
   var clients = _.map(connectionConfig.hosts, function (host) {
     var options = _.extend({}, connectionConfig);
@@ -59,10 +59,10 @@ function lift (done) {
 
         // the time in ms between attempts
         retryDelay:  200
-      }, framework.config.redlock.options)
+      }, ofa.config.redlock.options)
     );
 
-  framework.redlock = redlock;
+  ofa.redlock = redlock;
 
   done();
 };
